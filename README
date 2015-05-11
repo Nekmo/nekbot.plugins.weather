@@ -17,7 +17,7 @@ Moment keys options:
 Examples::
 
     !weather Madrid
-    Now: Clear 20.9ºc ⚫ Tomorrow: Partly cloudy until evening. 16.1ºc min. 31.5ºc max.
+    Now: Clear 18.9ºc ⚫ Today: Partly cloudy until evening. 16.8ºc min. 30.9ºc max. ⚫ Tomorrow: Clear throughout the day. 16.0ºc min. 34.1ºc max.
     
     !weather Madrid 01/02/1987
     Clear 6.7ºc 6.7ºc RealFeel 0% humid.
