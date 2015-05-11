@@ -70,7 +70,9 @@ def weather(msg, coord, moment=None):
     except ValueError as e:
         return 'Ops! No data for this place or moment: %s' % e.message
     if not moment:
-        return u'Now: %s ⚫ Tomorrow: %s' % (format_weather(fc.currently()), format_weather(fc.daily().data[0]))
+        return u'Now: %s ⚫ Today: %s ⚫ Tomorrow: %s' % (format_weather(fc.currently()),
+                                                        format_weather(fc.daily().data[0]),
+                                                        format_weather(fc.daily().data[1]))
     elif isinstance(moment, datetime.datetime):
         return u'%s' % format_weather(fc.currently(), EXTRA_INFO)
     elif hasattr(moment, '__call__'):
